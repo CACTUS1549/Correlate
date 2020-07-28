@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    
+    var healthStore = HealthKitDataManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        healthStore.requestPermissionsAndGetData()
     }
-
-
+ 
 }
 
